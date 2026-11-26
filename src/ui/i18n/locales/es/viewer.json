@@ -1,0 +1,27 @@
+{
+  "loading": "Preparando la partitura…",
+  "back": "Volver a las canciones",
+  "notice": {
+    "someSymbolsNotDisplayed": "Es posible que algunos símbolos de esta partitura no se muestren."
+  },
+  "failure": {
+    "songNotFound": {
+      "title": "Esta canción ya no está en tu biblioteca",
+      "hint": "Vuelve a la lista y elige otra canción."
+    },
+    "scoreUnreadable": {
+      "title": "No se pudo leer la partitura guardada",
+      "hint": "Prueba a importar el archivo de nuevo."
+    },
+    "renderFailed": {
+      "title": "No se pudo mostrar la partitura",
+      "hint": "Prueba a importar el archivo de nuevo, o expórtalo otra vez desde tu programa de notación."
+    }
+  },
+  "zoom": {
+    "group": "Zoom",
+    "in": "Acercar",
+    "out": "Alejar",
+    "fit": "Ajustar al ancho"
+  }
+}

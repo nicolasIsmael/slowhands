@@ -1,0 +1,37 @@
+{
+  "list": {
+    "title": "Canciones",
+    "empty": {
+      "title": "Aún no hay canciones",
+      "hint": "Importa un archivo MusicXML para empezar a leerlo aquí. Todo se queda en tu dispositivo."
+    },
+    "failure": {
+      "title": "No se pudieron cargar tus canciones",
+      "hint": "Reinicia la aplicación. Tus canciones siguen en este dispositivo."
+    }
+  },
+  "import": {
+    "button": "Importar partituras",
+    "dropHint": "Suelta los archivos MusicXML aquí para importarlos"
+  },
+  "row": {
+    "menu": "Acciones de {{name}}",
+    "rename": "Renombrar",
+    "delete": "Eliminar"
+  },
+  "rename": {
+    "title": "Renombrar canción",
+    "label": "Nombre de la canción",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "delete": {
+    "title": "¿Eliminar «{{name}}»?",
+    "description": "Esto quita la canción y su partitura de este dispositivo. No se puede deshacer.",
+    "confirm": "Eliminar",
+    "cancel": "Cancelar"
+  },
+  "actions": {
+    "failed": "No se pudo guardar el cambio. Inténtalo de nuevo."
+  }
+}

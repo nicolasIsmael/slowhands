@@ -1,0 +1,32 @@
+node_modules/
+dist/
+dev-dist/
+playwright-report/
+test-results/
+coverage/
+*.log
+.env*
+!.env.example
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+*.local
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs de gestores de paquetes
+pnpm-debug.log*
+npm-debug.log*
+
+# Caches de herramientas
+.vite/
+.cache/
+playwright/.cache/

@@ -1,0 +1,5 @@
+const MEBIBYTE = 1024 * 1024;
+
+export const MAX_SCORE_FILE_BYTES = 20 * MEBIBYTE;
+export const MAX_UNPACKED_BYTES = 100 * MEBIBYTE;
+export const MAX_CONTAINER_BYTES = 1 * MEBIBYTE;

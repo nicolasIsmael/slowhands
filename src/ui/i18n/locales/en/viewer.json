@@ -1,0 +1,27 @@
+{
+  "loading": "Preparing the score…",
+  "back": "Back to songs",
+  "notice": {
+    "someSymbolsNotDisplayed": "Some symbols in this score may not be displayed."
+  },
+  "failure": {
+    "songNotFound": {
+      "title": "This song is no longer in your library",
+      "hint": "Go back to the list and pick another song."
+    },
+    "scoreUnreadable": {
+      "title": "The saved score could not be read",
+      "hint": "Try importing the file again."
+    },
+    "renderFailed": {
+      "title": "The score could not be displayed",
+      "hint": "Try importing the file again, or export it again from your notation program."
+    }
+  },
+  "zoom": {
+    "group": "Zoom",
+    "in": "Zoom in",
+    "out": "Zoom out",
+    "fit": "Fit to width"
+  }
+}

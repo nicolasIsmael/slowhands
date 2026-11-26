@@ -1,0 +1,67 @@
+[
+  {
+    "package": "minimatch",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency"
+  },
+  {
+    "package": "lru-cache",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency"
+  },
+  {
+    "package": "isexe",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency"
+  },
+  {
+    "package": "graceful-fs",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency"
+  },
+  {
+    "package": "@isaacs/cliui",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "package-json-from-dist",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "path-scurry",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "minipass",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "jackspeak",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "glob",
+    "license": "BlueOak-1.0.0",
+    "reason": "Permissive license, transitive build-time dependency of the service worker generator"
+  },
+  {
+    "package": "caniuse-lite",
+    "license": "CC-BY-4.0",
+    "reason": "Browser-support data used by build tools; not shipped"
+  },
+  {
+    "package": "lightningcss*",
+    "license": "MPL-2.0",
+    "reason": "CSS engine inside Tailwind CSS 4; build tool, not distributed with the app"
+  },
+  {
+    "package": "pako",
+    "license": "(MIT AND Zlib)",
+    "reason": "Permissive zlib license; runtime dependency of the score renderer through jszip"
+  }
+]

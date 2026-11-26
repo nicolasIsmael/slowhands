@@ -1,0 +1,14 @@
+{
+  "update": {
+    "available": "Hay una versión nueva de SlowHands lista.",
+    "apply": "Actualizar ahora",
+    "waitForImport": "Se podrá aplicar cuando termine la importación."
+  },
+  "reload": {
+    "message": "SlowHands se actualizó en otra pestaña. Recarga esta página para seguir trabajando.",
+    "action": "Recargar"
+  },
+  "install": {
+    "button": "Instalar aplicación"
+  }
+}

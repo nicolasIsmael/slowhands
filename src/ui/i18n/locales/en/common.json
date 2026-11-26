@@ -1,0 +1,7 @@
+{
+  "app": { "name": "SlowHands" },
+  "language": {
+    "label": "Language",
+    "option": { "en": "English", "es": "Español" }
+  }
+}

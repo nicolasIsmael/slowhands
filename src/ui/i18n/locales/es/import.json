@@ -1,0 +1,103 @@
+{
+  "progress": {
+    "heading": "Importando partituras",
+    "count": "{{done}} de {{total}}"
+  },
+  "step": {
+    "waiting": "En espera",
+    "checking": "Comprobando…",
+    "saving": "Guardando…",
+    "imported": "Importada",
+    "failed": "No importada",
+    "duplicate": "Ya está en tu biblioteca",
+    "replaced": "Reemplazada",
+    "keptBoth": "Conservada junto a la existente",
+    "skipped": "Omitida (ya está en tu biblioteca)"
+  },
+  "summary": {
+    "heading": "Importación terminada",
+    "imported_one": "{{count}} canción importada",
+    "imported_many": "{{count}} de canciones importadas",
+    "imported_other": "{{count}} canciones importadas",
+    "replaced_one": "{{count}} canción reemplazada",
+    "replaced_many": "{{count}} de canciones reemplazadas",
+    "replaced_other": "{{count}} canciones reemplazadas",
+    "keptBoth_one": "{{count}} canción conservada junto a la existente",
+    "keptBoth_many": "{{count}} de canciones conservadas junto a las existentes",
+    "keptBoth_other": "{{count}} canciones conservadas junto a las existentes",
+    "skipped_one": "{{count}} duplicada omitida",
+    "skipped_many": "{{count}} de duplicadas omitidas",
+    "skipped_other": "{{count}} duplicadas omitidas",
+    "failed_one": "{{count}} archivo no se pudo importar",
+    "failed_many": "{{count}} de archivos no se pudieron importar",
+    "failed_other": "{{count}} archivos no se pudieron importar",
+    "close": "Cerrar"
+  },
+  "failure": {
+    "unsupportedFileType": {
+      "title": "Este tipo de archivo aún no es compatible",
+      "hint": "Elige un archivo MusicXML (.musicxml, .xml o .mxl)."
+    },
+    "emptyFile": {
+      "title": "El archivo está vacío",
+      "hint": "Elige un archivo que contenga una partitura."
+    },
+    "fileTooLarge": {
+      "title": "El archivo es demasiado grande",
+      "hint": "Los archivos pueden pesar hasta {{limitMb}} MB. Prueba con uno más pequeño."
+    },
+    "unpackedTooLarge": {
+      "title": "La partitura es demasiado grande al descomprimirla",
+      "hint": "Exporta una partitura más pequeña, o con menos partes, desde tu programa de notación."
+    },
+    "archiveCorrupted": {
+      "title": "El archivo comprimido está dañado",
+      "hint": "Vuelve a exportar la partitura, como .mxl o como .musicxml sin comprimir."
+    },
+    "archiveWithoutScore": {
+      "title": "No se encontró ninguna partitura dentro del archivo comprimido",
+      "hint": "Vuelve a exportar la partitura desde tu programa de notación."
+    },
+    "xmlMalformed": {
+      "title": "El archivo está dañado o incompleto",
+      "hint": "Vuelve a exportar la partitura; puede que el archivo se haya cortado."
+    },
+    "notAScore": {
+      "title": "Esto no es una partitura MusicXML",
+      "hint": "Elige un archivo exportado como MusicXML desde tu programa de notación."
+    },
+    "scoreWithoutMusic": {
+      "title": "La partitura no contiene música",
+      "hint": "Comprueba que la partitura tenga al menos una parte con compases."
+    },
+    "fileUnreadable": {
+      "title": "No se pudo leer el archivo",
+      "hint": "Elige el archivo de nuevo, o cópialo primero a tu dispositivo."
+    },
+    "storageFull": {
+      "title": "No hay espacio suficiente en este dispositivo",
+      "hint": "Libera espacio o elimina canciones que ya no necesites e inténtalo de nuevo."
+    },
+    "storageFailed": {
+      "title": "No se pudo guardar la canción",
+      "hint": "Inténtalo de nuevo. Si sigue fallando, reinicia la aplicación."
+    },
+    "unexpectedError": {
+      "title": "Algo salió mal",
+      "hint": "Prueba el archivo de nuevo. Si sigue fallando, puede que no sea una partitura válida."
+    }
+  },
+  "duplicates": {
+    "heading_one": "Esta canción ya está en tu biblioteca",
+    "heading_many": "{{count}} de canciones ya están en tu biblioteca",
+    "heading_other": "{{count}} canciones ya están en tu biblioteca",
+    "explanation": "Elige una sola acción para todas. Reemplazar las existentes cambia su partitura por los archivos nuevos, conservar ambas añade los archivos nuevos como canciones aparte, y omitir duplicadas no cambia nada.",
+    "reason": {
+      "sameContent": "Misma partitura que «{{name}}»",
+      "sameIdentity": "Se parece a «{{name}}»"
+    },
+    "replace": "Reemplazar existentes",
+    "keepBoth": "Conservar ambas",
+    "skip": "Omitir duplicadas"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.9/schema.json",
+  "vcs": {
+    "enabled": false
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "*.ts",
+      "*.json",
+      "*.html",
+      "src/**",
+      "e2e/**",
+      "tooling/**",
+      "docs/**",
+      "fixtures/**",
+      "!fixtures/scores"
+    ]
+  },
+  "plugins": ["./tooling/biome/no-expression-bodied-component.grit"],
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "style": {
+        "noExcessiveLinesPerFile": {
+          "level": "error",
+          "options": {
+            "maxLines": 200
+          }
+        }
+      },
+      "complexity": {
+        "noExcessiveLinesPerFunction": {
+          "level": "error",
+          "options": {
+            "maxLines": 23
+          }
+        },
+        "noImportantStyles": "off"
+      },
+      "suspicious": {
+        "noImportCycles": "error"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["src/core/**", "!src/core/**/*.test.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@ui",
+                      "@ui/**",
+                      "@engines",
+                      "@engines/**",
+                      "@storage",
+                      "@storage/**",
+                      "**/ui",
+                      "**/ui/**",
+                      "**/engines",
+                      "**/engines/**",
+                      "**/storage",
+                      "**/storage/**"
+                    ],
+                    "message": "core must not depend on other layers"
+                  },
+                  {
+                    "group": ["**", "!./**", "!../**", "!./*", "!../*", "!.", "!.."],
+                    "message": "core imports no third-party package"
+                  }
+                ]
+              }
+            },
+            "noRestrictedGlobals": {
+              "level": "error",
+              "options": {
+                "deniedGlobals": {
+                  "document": "no DOM in core",
+                  "window": "no DOM in core",
+                  "indexedDB": "no browser APIs in core",
+                  "navigator": "no browser APIs in core",
+                  "localStorage": "no browser APIs in core",
+                  "fetch": "no browser APIs in core",
+                  "crypto": "no browser APIs in core"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/engines/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@ui",
+                      "@ui/**",
+                      "@storage",
+                      "@storage/**",
+                      "**/ui",
+                      "**/ui/**",
+                      "**/storage",
+                      "**/storage/**"
+                    ],
+                    "message": "engines must not depend on ui or storage"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/storage/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@ui",
+                      "@ui/**",
+                      "@engines",
+                      "@engines/**",
+                      "**/ui",
+                      "**/ui/**",
+                      "**/engines",
+                      "**/engines/**"
+                    ],
+                    "message": "storage must not depend on ui or engines"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  }
+}

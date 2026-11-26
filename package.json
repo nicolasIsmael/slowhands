@@ -1,0 +1,57 @@
+{
+  "name": "slowhands",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Local-first piano practice app that works from your own MusicXML scores.",
+  "type": "module",
+  "packageManager": "pnpm@12.23.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "node --run typecheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.core.json && tsc -p tsconfig.app.json && tsc -p tsconfig.test.json && tsc -p tsconfig.node.json",
+    "lint": "biome check .",
+    "test": "vitest run",
+    "test:e2e": "playwright test --project=pixel-7 --project=desktop && playwright test --project=timing --workers=1",
+    "hooks:install": "git config core.hooksPath .githooks",
+    "check": "node --run typecheck && node --run lint && node --run checks && node --run test",
+    "checks": "node tooling/checks/verify-line-limits.ts && node tooling/checks/verify-licenses.ts && node tooling/checks/verify-adr-index.ts && node tooling/checks/verify-no-tooling-traces.ts"
+  },
+  "dependencies": {
+    "class-variance-authority": "0.7.1",
+    "cn": "0.5.2",
+    "dexie": "4.4.7",
+    "fflate": "0.8.3",
+    "i18next": "27.2.7",
+    "lucide-react": "1.79.0",
+    "opensheetmusicdisplay": "2.3.1",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-i18next": "18.0.3",
+    "saxes": "6.0.0",
+    "workbox-window": "7.4.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.9",
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/vite": "4.3.5",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.13",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.1",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "fake-indexeddb": "6.2.8",
+    "jsdom": "31.0.1",
+    "shadcn": "4.23.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vite-plugin-pwa": "1.3.0",
+    "vitest": "5.1.1"
+  }
+}

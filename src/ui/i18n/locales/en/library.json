@@ -1,0 +1,37 @@
+{
+  "list": {
+    "title": "Songs",
+    "empty": {
+      "title": "No songs yet",
+      "hint": "Import a MusicXML file to start reading it here. Everything stays on your device."
+    },
+    "failure": {
+      "title": "Your songs could not be loaded",
+      "hint": "Restart the app. Your songs are still on this device."
+    }
+  },
+  "import": {
+    "button": "Import scores",
+    "dropHint": "Drop MusicXML files here to import them"
+  },
+  "row": {
+    "menu": "Actions for {{name}}",
+    "rename": "Rename",
+    "delete": "Delete"
+  },
+  "rename": {
+    "title": "Rename song",
+    "label": "Song name",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "delete": {
+    "title": "Delete “{{name}}”?",
+    "description": "This removes the song and its score from this device. This cannot be undone.",
+    "confirm": "Delete",
+    "cancel": "Cancel"
+  },
+  "actions": {
+    "failed": "The change could not be saved. Try again."
+  }
+}

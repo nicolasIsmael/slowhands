@@ -1,0 +1,14 @@
+{
+  "update": {
+    "available": "A new version of SlowHands is ready.",
+    "apply": "Update now",
+    "waitForImport": "It can be applied when the import finishes."
+  },
+  "reload": {
+    "message": "SlowHands was updated in another tab. Reload this page to keep working.",
+    "action": "Reload"
+  },
+  "install": {
+    "button": "Install app"
+  }
+}

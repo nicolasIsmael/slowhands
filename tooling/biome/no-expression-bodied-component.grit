@@ -1,0 +1,6 @@
+language js(typescript, jsx)
+
+`const $name = ($params) => $body` where {
+  $body <: r"\(\s*<[\s\S]*",
+  register_diagnostic(span=$body, message="Declare components as functions with a block body so the line-count rule can measure them.")
+}

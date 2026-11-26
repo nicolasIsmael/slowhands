@@ -1,0 +1,97 @@
+{
+  "progress": {
+    "heading": "Importing scores",
+    "count": "{{done}} of {{total}}"
+  },
+  "step": {
+    "waiting": "Waiting",
+    "checking": "Checking…",
+    "saving": "Saving…",
+    "imported": "Imported",
+    "failed": "Not imported",
+    "duplicate": "Already in your library",
+    "replaced": "Replaced",
+    "keptBoth": "Kept next to the existing song",
+    "skipped": "Skipped (already in your library)"
+  },
+  "summary": {
+    "heading": "Import finished",
+    "imported_one": "{{count}} song imported",
+    "imported_other": "{{count}} songs imported",
+    "replaced_one": "{{count}} song replaced",
+    "replaced_other": "{{count}} songs replaced",
+    "keptBoth_one": "{{count}} song kept next to the existing one",
+    "keptBoth_other": "{{count}} songs kept next to the existing ones",
+    "skipped_one": "{{count}} duplicate skipped",
+    "skipped_other": "{{count}} duplicates skipped",
+    "failed_one": "{{count}} file could not be imported",
+    "failed_other": "{{count}} files could not be imported",
+    "close": "Close"
+  },
+  "failure": {
+    "unsupportedFileType": {
+      "title": "This file type is not supported yet",
+      "hint": "Choose a MusicXML file (.musicxml, .xml or .mxl)."
+    },
+    "emptyFile": {
+      "title": "The file is empty",
+      "hint": "Pick a file that contains a score."
+    },
+    "fileTooLarge": {
+      "title": "The file is too large",
+      "hint": "Files can be up to {{limitMb}} MB. Try a smaller file."
+    },
+    "unpackedTooLarge": {
+      "title": "The score is too large once unpacked",
+      "hint": "Export a smaller score, or fewer parts, from your notation program."
+    },
+    "archiveCorrupted": {
+      "title": "The compressed file is damaged",
+      "hint": "Export the score again, as .mxl or as plain .musicxml."
+    },
+    "archiveWithoutScore": {
+      "title": "No score was found inside the compressed file",
+      "hint": "Export the score again from your notation program."
+    },
+    "xmlMalformed": {
+      "title": "The file is damaged or incomplete",
+      "hint": "Export the score again; the file may have been cut off."
+    },
+    "notAScore": {
+      "title": "This is not a MusicXML score",
+      "hint": "Choose a file exported as MusicXML from your notation program."
+    },
+    "scoreWithoutMusic": {
+      "title": "The score has no music in it",
+      "hint": "Check that the score has at least one part with measures."
+    },
+    "fileUnreadable": {
+      "title": "The file could not be read",
+      "hint": "Pick the file again, or copy it to your device first."
+    },
+    "storageFull": {
+      "title": "There is not enough space on this device",
+      "hint": "Free some space or delete songs you no longer need, then try again."
+    },
+    "storageFailed": {
+      "title": "The song could not be saved",
+      "hint": "Try again. If it keeps failing, restart the app."
+    },
+    "unexpectedError": {
+      "title": "Something went wrong",
+      "hint": "Try the file again. If it keeps failing, it may not be a valid score."
+    }
+  },
+  "duplicates": {
+    "heading_one": "This song is already in your library",
+    "heading_other": "{{count}} songs are already in your library",
+    "explanation": "Choose one action for all of them. Replace existing swaps their scores for the new files, keep both adds the new files as separate songs, and skip duplicates changes nothing.",
+    "reason": {
+      "sameContent": "Same score as “{{name}}”",
+      "sameIdentity": "Looks like “{{name}}”"
+    },
+    "replace": "Replace existing",
+    "keepBoth": "Keep both",
+    "skip": "Skip duplicates"
+  }
+}
